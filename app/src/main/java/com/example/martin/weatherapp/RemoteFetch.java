@@ -8,12 +8,11 @@ import java.net.URL;
 import org.json.JSONObject;
 
 import android.content.Context;
-import android.util.Log;
 
 public class RemoteFetch {
 
     private static final String OPEN_WEATHER_MAP_API =
-            "http://api.openweathermap.org/data/2.5/weather?q=%s&units=metric";
+            "http://samples.openweathermap.org/data/2.5/weather?q=London&appid=e19189bd28917daba12d7a2069fea14a";
 
     public static JSONObject getJSON(Context context, String city){
         try {
